@@ -1,0 +1,141 @@
+.catwalk15 ul {
+	list-style-type: none;
+	margin: 0;
+}
+
+.catwalk15 .clear {
+	clear: both;
+}
+
+.catwalk15 .thumbnails li {
+	display: block;
+	float: left;
+	width: 49%;
+	height: 49%;
+	margin-bottom: 2%;
+	position: relative;
+}
+
+.catwalk15 .thumbnails li:nth-child(2n+1) {
+	margin-right: 2%;
+}
+
+.catwalk15 .thumbnails img {
+	width: 100%;
+}
+
+.catwalk15 .votes {
+	font-size: 12px;
+	line-height: 20px;
+	width: 30px;
+	height: 20px;
+	position: absolute;
+	text-align: center;
+	bottom: -1px;
+	color: white;
+}
+
+.catwalk15 .votes.plus {
+	left: 0;
+	background: #31b5ad;
+	-webkit-border-top-right-radius: 3px;
+	-moz-border-radius-topright: 3px;
+	border-top-right-radius: 3px;
+	bottom: 0;
+}
+
+.catwalk15 .votes.minus {
+	right: 0;
+	background: #f14d4d;
+	-webkit-border-top-left-radius: 3px;
+	-moz-border-radius-topleft: 3px;
+	border-top-left-radius: 3px;
+}
+
+.catwalk15 .achievement-pictures {
+  position: relative;
+  overflow: hidden;
+	padding-bottom:3px;
+	margin-bottom:10px;
+}
+
+.catwalk15 .linie {
+	border-bottom: 2px solid #72487d; 
+}
+
+.catwalk15 .achievement-pictures li {
+	margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.catwalk15 .achievement-pic {
+	width: 23.5%;
+	margin-right: 2%;
+	float: left;
+	cursor: pointer;
+}
+
+.catwalk15 li:nth-child(4) .achievement-pic {
+	margin-right: 0;
+}
+
+.catwalk15 .achievement-pictures > li:last-child {
+    position: absolute;
+		height: 3px;
+    bottom: 0px;
+    left: 0;
+    width: 23.5%;
+    transition: transform .3s;
+    -webkit-transition: transform .3s;
+		margin-top:7px;
+}
+
+.catwalk15 .achievement-pictures li:nth-child(1):hover ~ li:last-child {
+    transform:translateX(0) !important;
+}
+
+.catwalk15 .achievement-pictures li:nth-child(2):hover ~ li:last-child {
+    transform:translateX(110%) !important;
+}
+
+.catwalk15 .achievement-pictures li:nth-child(3):hover ~ li:last-child {
+    transform:translateX(220%) !important;
+}
+
+.catwalk15 .achievement-pictures li:nth-child(4):hover ~ li:last-child {
+    transform:translateX(330%) !important;
+}
+
+.catwalk15 .achievement-pictures .selected {
+    position: relative;
+    pointer-events: none;
+    cursor: default;
+}
+
+.catwalk15 .achievement-container {
+	width: 23%;
+	padding-right: 2%;
+	padding-bottom: 2%;
+	float: left;
+}
+
+.catwalk15 .arrow {
+	width: 100%;
+	height: 3px;
+	background: url("images/arrow.png") center center no-repeat;
+}
+
+.catwalk15 .achievement-title {
+	display: none;
+}
+
+.catwalk15 .subtitle {
+	margin-top: 2em;
+}
+/*
+@-moz-document url-prefix() { 
+	.catwalk15 .achievement-pictures > li:last-child {
+     top: 48px;
+  }
+}*/
